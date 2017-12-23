@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>MH Modbus TCP tester V2</title>
+
+  <meta name="Marcin Hornik">
+
+  <script src="http://localhost:35729/livereload.js" type="text/javascript"></script>
+
+  <script language="javascript" src="modbus.js" type="text/javascript"></script>
+  <script language="javascript" src="ping.js" type="text/javascript"></script>
+
+
+
+
+  <link rel="Stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body onload="ping()">
+
+  <div id="textH2">Modbus TCP tester V2 --- by MH ---</div>
+  <div id="ipAddressDiv">Modbus TCP IP Address: <input type="text" id="ipAddress" size="10" value="192.168.0.3">:502</div>
+  <!-- <div id="ipPortDiv">Modbus TCP Port Number: <input type="text" id="ipPort" size="3" value="502"></div> -->
+  <button id="button1" onmousedown="ping(), clearTextaArea()">Clear text area</button>
+  <!-- <button id="button2" onClick="hex2aTest(hexxTest)">conversion  hex2ascii</button>  <!-- przekazanie argumentu ze zmeinnej hexx do funkcji hex2a --> -->
+  <!-- <button id="button3" onClick="a2hexTest(asciiTest)">conversion  ascii2hex</button> -->
+  <div id="button4">Holding Register Number: <input type="text" id="regNumberButton4" size="2" value="1"> Value to write: <input type="text" id="valueButton4" size="1" value="1"> <button id="button4On" value="b4" onmousedown="regTempFuncB4(), ping(), modbus()">Write</button><span id="button4Status"></span></div>
+  <div id="button5">Holding Register Number: <input type="text" id="regNumberButton5" size="2" value="2"> Value to write: <input type="text" id="valueButton5" size="1" value="1"> <button id="button5On" value="b5"onmousedown="regTempFuncB5(),  ping(), modbus()">Write</button><span id="button5Status"></span></div>
+  <div id="button6">Holding Register Number: <input type="text" id="regNumberButton6" size="2" value="3"> Value to write: <input type="text" id="valueButton6" size="1" value="1"> <button id="button6On" value="b6" onmousedown="regTempFuncB6(), ping(), modbus()">Write</button><span id="button6Status"></span></div>
+  <div id="button7">Holding Register Number: <input type="text" id="regNumberButton7" size="2" value="4"> Value to write: <input type="text" id="valueButton7" size="1" value="1"> <button id="button7On" value="b7" onmousedown="regTempFuncB7(), ping(), modbus()">Write</button><span id="button7Status"></span></div>
+
+  <div id="button8"> <b>First</b> Holding Register Number: <input type="text" id="firstRegNumber" size="2" value="1"> <b>Last</b> Holding Register Number: <input type="text" id="lastRegNumber" size="2" value="1"> <button onClick="ping(), modbusRead()">Read</button></div>
+
+<button id="button9" onmousedown="ping()">Check connection</button>
+  <span id="button8Status"></span>
+<div id="viewResultDiscription">Sended / Received Data:</div>
+ <!-- <div id="viewResult"></div>  -->
+  <textarea id="viewResult"></textarea>
+
+  <div id="connected"></div>
+  <div id="disconnected"></div>
+
+</body>
+
+</html>

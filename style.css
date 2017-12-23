@@ -1,0 +1,145 @@
+body {
+  overflow-y: hidden;
+}
+
+#roletyPNG {
+  padding: 0px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 100px;
+  left: 5px;
+  width: 492px;
+  height: 314px;
+}
+
+#textH2 {
+  padding: 0px;
+  border: 0px solid black;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 28px;
+}
+
+#button1 {
+  position: absolute;
+  top: 600px;
+  left: 500px;
+}
+
+#button2 {
+  position: absolute;
+  top: 280px;
+  left: 5px;
+}
+
+#button3 {
+  position: absolute;
+  top: 280px;
+  left: 175px;
+}
+
+#button4 {
+  position: absolute;
+  top: 160px;
+  left: 5px;
+}
+
+#button5 {
+  position: absolute;
+  top: 190px;
+  left: 5px;
+}
+
+#button6 {
+  position: absolute;
+  top: 220px;
+  left: 5px;
+}
+
+#button7 {
+  position: absolute;
+  top: 250px;
+  left: 5px;
+}
+
+#button8 {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+}
+
+#button9 {
+  position: absolute;
+  top: 80px;
+  left: 480px;
+}
+
+#button10 {
+  position: absolute;
+  top: 75px;
+  left: 100px;
+}
+
+#button11 {
+  position: absolute;
+  top: 420px;
+  left: 305px;
+}
+
+#button12 {
+  position: absolute;
+  top: 420px;
+  left: 430px;
+}
+
+#viewResultDiscription {
+  position: absolute;
+  top: 310px;
+  left: 5px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#viewResult {
+  position: absolute;
+  border: 1px solid black;
+  top: 325px;
+  left: 5px;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: bold;
+  color: blue;
+  width: 592px;
+  height: 260px;
+}
+
+#ipAddressDiv {
+  position: absolute;
+  top: 80px;
+  left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#ipPortDiv {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#connected {
+  position: absolute;
+  top: 80px;
+  left: 330px;
+  font-size: 16px;
+  font-weight: bold;
+
+}
