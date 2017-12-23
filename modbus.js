@@ -124,6 +124,12 @@ function modbusWrite() {
         // resp will look like { fc: 6, byteCount: 4, registerAddress: 13, registerValue: 42 }
         console.log(resp);
 
+        let separator = ";";
+
+
+        document.getElementById("viewResult").innerHTML += godzina + ":" + minuta + ":" + sekunda + ": " + "Sended:" + "R"+reg+ "="+ val + "\n"; //resp.register powoduje wyświetlenie danych z tablicy
+
+
       }, console.error).finally(function () {
         client.close()
       });
